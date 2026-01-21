@@ -1,0 +1,151 @@
+body {
+    background-color: black;
+    cursor: none;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 600px;
+  
+    height: 350px;
+    padding: 20px;
+    background-color: rgb(21, 130, 177);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    gap: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.box:hover {
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 1, 0.8), 0 0 40px 20px rgba(255, 255, 255, 0.4);
+}
+
+.box button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#i-do-btn {
+    background-color: #4CAF50;
+
+    color: white;
+}
+
+#i-do-btn:hover {
+    transform: scale(1.1);
+}
+
+#no-way-btn {
+    background-color: #f44336;
+
+    color: white;
+    z-index: 100;
+
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#overlay-text {
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+h1:hover {
+    color: black;
+}
+
+.container-2 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: none;
+    }
+    .container-2 {
+        display: flex;
+    }
+    .box3 {
+    
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 0, 0, 0.9);
+}
+
+.text {
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.text-2 {
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+}
